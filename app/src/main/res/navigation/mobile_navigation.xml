@@ -18,8 +18,12 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/settingsFragment"
         android:name="com.example.reserved.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.reserved.SettingsFragment"
+        android:label="@string/setting_label" />
 </navigation>
