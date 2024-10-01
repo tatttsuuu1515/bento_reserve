@@ -26,4 +26,9 @@
         android:id="@+id/settingsFragment"
         android:name="com.example.reserved.SettingsFragment"
         android:label="@string/setting_label" />
+    <fragment
+        android:id="@+id/menu_all"
+        android:name="com.example.reserved.menu_all"
+        android:label="fragment_menu_all"
+        tools:layout="@layout/fragment_menu_all" />
 </navigation>
