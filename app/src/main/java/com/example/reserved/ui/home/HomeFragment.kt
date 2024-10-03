@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.reserved.R
 import com.example.reserved.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -26,6 +27,8 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        binding.RadioGroup.check(R.id.allmenu_button)
 
 
 

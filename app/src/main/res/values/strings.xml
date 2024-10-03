@@ -28,4 +28,7 @@
     <string name="display_setting">表示モード</string>
     <string name="bento_info">お弁当に関する説明</string>
     <string name="ordered_day">〇月〇日</string>
+    <string name="sort_text">おすすめ順</string>
+    <string name="allmenu_text">全てのメニュー</string>
+    <string name="rankingmenu_text">人気トップ３</string>
 </resources>
