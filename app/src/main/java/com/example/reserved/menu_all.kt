@@ -1,11 +1,11 @@
 package com.example.reserved
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.reserved.databinding.ActivityMainBinding
 import com.example.reserved.databinding.FragmentMenuAllBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -22,6 +22,8 @@ class menu_all : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private var _binding: FragmentMenuAllBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,8 +37,45 @@ class menu_all : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu_all, container, false)
+        _binding = FragmentMenuAllBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+        binding.sortButton.setOnClickListener {
+            // ラジオボタンの選択肢
+            val sortOptions = arrayOf("おすすめ順", "値段が安い順", "値段が高い順")
+            var selectedOption = 0 // 初期選択項目のインデックス
+
+            // アラートダイアログの生成
+            AlertDialog.Builder(requireContext())
+                .setTitle("表示の並び替え") // ダイアログタイトル
+                .setSingleChoiceItems(sortOptions, selectedOption) { dialog, which ->
+                    selectedOption = which // 選択された項目のインデックスを更新
+                }
+                .setPositiveButton("OK") { dialog, which ->
+                    // OKボタンが押されたときの処理
+                    when (selectedOption) {
+                        0 -> {
+                            // おすすめ順が選択された場合の処理
+
+                        }
+                        1 -> {
+                            // 値段が安い順が選択された場合の処理
+
+                        }
+                        2 -> {
+                            // 値段が高い順が選択された場合の処理
+
+                        }
+                    }
+                }
+                .setNegativeButton("キャンセル", null) // キャンセルボタン
+                .show()
+        }
+
+
+
+
+        return root
     }
 
     companion object {
