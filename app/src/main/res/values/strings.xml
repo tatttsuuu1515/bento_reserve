@@ -27,4 +27,5 @@
     <string name="password_change">パスワードを変更する</string>
     <string name="display_setting">表示モード</string>
     <string name="bento_info">お弁当に関する説明</string>
+    <string name="ordered_day">〇月〇日</string>
 </resources>
