@@ -6,32 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".menu_all" >
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="681dp"
-        android:layout_marginTop="1dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <!-- 1行目: フラグメント2つを横並び -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="end"> <!-- コンテンツ全体を右寄せ -->
+
+                <Button
+                    android:id="@+id/sort_button"
+                    style="@android:style/Widget.DeviceDefault.Button.Colored"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:drawableRight="@drawable/baseline_sort_24"
+                    android:outlineAmbientShadowColor="#7E7E7E"
+                    android:outlineSpotShadowColor="#B1B1B1"
+                    android:text="@string/sort_text"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    app:backgroundTint="@color/off_white"
+                    app:rippleColor="#FFFFFF"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:orientation="horizontal">
 
                 <androidx.fragment.app.FragmentContainerView
@@ -73,9 +94,9 @@
                     android:name="com.example.reserved.bento_panel"
                     android:layout_width="0dp"
                     android:layout_height="250dp"
-                    android:layout_weight="1"
                     android:layout_margin="8dp"
-                    tools:layout="@layout/fragment_bento_panel"/>
+                    android:layout_weight="1"
+                    tools:layout="@layout/fragment_bento_panel" />
             </LinearLayout>
 
             <!-- 3行目: フラグメント2つを横並び -->
@@ -89,18 +110,18 @@
                     android:name="com.example.reserved.bento_panel"
                     android:layout_width="0dp"
                     android:layout_height="250dp"
-                    android:layout_weight="1"
                     android:layout_margin="8dp"
-                    tools:layout="@layout/fragment_bento_panel"/>
+                    android:layout_weight="1"
+                    tools:layout="@layout/fragment_bento_panel" />
 
                 <androidx.fragment.app.FragmentContainerView
                     android:id="@+id/fragmentContainerView6"
                     android:name="com.example.reserved.bento_panel"
                     android:layout_width="0dp"
                     android:layout_height="250dp"
-                    android:layout_weight="1"
                     android:layout_margin="8dp"
-                    tools:layout="@layout/fragment_bento_panel"/>
+                    android:layout_weight="1"
+                    tools:layout="@layout/fragment_bento_panel" />
             </LinearLayout>
 
             <LinearLayout
@@ -113,18 +134,18 @@
                     android:name="com.example.reserved.bento_panel"
                     android:layout_width="0dp"
                     android:layout_height="250dp"
-                    android:layout_weight="1"
                     android:layout_margin="8dp"
-                    tools:layout="@layout/fragment_bento_panel"/>
+                    android:layout_weight="1"
+                    tools:layout="@layout/fragment_bento_panel" />
 
                 <androidx.fragment.app.FragmentContainerView
                     android:id="@+id/fragmentContainerView8"
                     android:name="com.example.reserved.bento_panel"
                     android:layout_width="0dp"
                     android:layout_height="250dp"
-                    android:layout_weight="1"
                     android:layout_margin="8dp"
-                    tools:layout="@layout/fragment_bento_panel"/>
+                    android:layout_weight="1"
+                    tools:layout="@layout/fragment_bento_panel" />
             </LinearLayout>
 
             <LinearLayout
@@ -137,16 +158,16 @@
                     android:name="com.example.reserved.bento_panel"
                     android:layout_width="0dp"
                     android:layout_height="250dp"
-                    android:layout_weight="1"
-                    android:layout_margin="8dp" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1" />
 
                 <androidx.fragment.app.FragmentContainerView
                     android:id="@+id/fragmentContainerView10"
                     android:name="com.example.reserved.bento_panel"
                     android:layout_width="0dp"
                     android:layout_height="250dp"
-                    android:layout_weight="1"
-                    android:layout_margin="8dp" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
@@ -159,16 +180,16 @@
                     android:name="com.example.reserved.bento_panel"
                     android:layout_width="0dp"
                     android:layout_height="250dp"
-                    android:layout_weight="1"
-                    android:layout_margin="8dp" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1" />
 
                 <androidx.fragment.app.FragmentContainerView
                     android:id="@+id/fragmentContainerView12"
                     android:name="com.example.reserved.bento_panel"
                     android:layout_width="0dp"
                     android:layout_height="250dp"
-                    android:layout_weight="1"
-                    android:layout_margin="8dp" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
@@ -181,16 +202,16 @@
                     android:name="com.example.reserved.bento_panel"
                     android:layout_width="0dp"
                     android:layout_height="250dp"
-                    android:layout_weight="1"
-                    android:layout_margin="8dp" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1" />
 
                 <androidx.fragment.app.FragmentContainerView
                     android:id="@+id/fragmentContainerView14"
                     android:name="com.example.reserved.bento_panel"
                     android:layout_width="0dp"
                     android:layout_height="250dp"
-                    android:layout_weight="1"
-                    android:layout_margin="8dp" />
+                    android:layout_margin="8dp"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
@@ -217,10 +238,12 @@
                     tools:layout="@layout/fragment_bento_panel" />
             </LinearLayout>
 
-            <LinearLayout
+            <ImageView
+                android:id="@+id/imageView2"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"></LinearLayout>
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_sort_24" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
