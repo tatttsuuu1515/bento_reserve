@@ -35,7 +35,7 @@
                 android:orientation="horizontal">
 
                 <androidx.fragment.app.FragmentContainerView
-                    android:id="@+id/fragmentContainerView1"
+                    android:id="@+id/menu_panel_1"
                     android:name="com.example.reserved.bento_panel"
                     android:layout_width="0dp"
                     android:layout_height="250dp"
