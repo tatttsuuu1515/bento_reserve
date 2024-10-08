@@ -1,0 +1,37 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/account_header">
+        <Preference
+            android:selectable="false"
+            android:summary="Default Name"
+            app:icon="@drawable/baseline_account_circle_24"
+            app:key="key_account_name"
+            app:title="@string/account_title" />
+
+        <Preference
+            android:selectable="false"
+            android:summary="Default email"
+            app:icon="@drawable/baseline_email_24"
+            app:key="key_email_name"
+            app:title="@string/email_title" />
+
+        <Preference
+            android:key="key_password_change"
+            android:title="@string/password_change"
+            app:icon="@drawable/baseline_password_24" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/app_header">
+        <ListPreference
+            android:defaultValue="ライトテーマ"
+            android:entries="@array/reply_entries"
+            android:entryValues="@array/reply_values"
+            android:key="key_display_mode"
+            android:title="@string/display_setting"
+            app:icon="@drawable/baseline_brush_24"
+            app:negativeButtonText="キャンセル"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

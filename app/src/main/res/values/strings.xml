@@ -1,6 +1,34 @@
 <resources>
     <string name="app_name">reserved</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">メニュー</string>
+    <string name="title_dashboard">予約一覧</string>
+    <string name="title_notifications">設定</string>
+    <!-- Preference Titles -->
+    <string name="app_header">アプリ設定</string>
+
+    <!-- Messages Preferences -->
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="setting_label">設定</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bento_name">お弁当名</string>
+    <string name="bento_price">〇〇〇円</string>
+    <string name="bento_stock">在庫あり</string>
+    <string name="account_header">アカウント情報</string>
+    <string name="account_title">アカウント名</string>
+    <string name="email_title">メールアドレス</string>
+    <string name="password_change">パスワードを変更する</string>
+    <string name="display_setting">表示モード</string>
+    <string name="bento_info">お弁当に関する説明</string>
+    <string name="ordered_day">〇月〇日</string>
+    <string name="sort_text">おすすめ順</string>
+    <string name="allmenu_text">全てのメニュー</string>
+    <string name="rankingmenu_text">人気トップ３</string>
 </resources>
